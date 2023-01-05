@@ -1,0 +1,43 @@
+{
+    "coord": {
+        "lon": 24.75,
+        "lat": 42.15
+    },
+    "weather": [
+        {
+            "id": 803,
+            "main": "Clouds",
+            "description": "broken clouds",
+            "icon": "04d"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 14.04,
+        "feels_like": 12.83,
+        "temp_min": 14.04,
+        "temp_max": 14.17,
+        "pressure": 1018,
+        "humidity": 51
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 5.14,
+        "deg": 250
+    },
+    "clouds": {
+        "all": 75
+    },
+    "dt": 1672920905,
+    "sys": {
+        "type": 1,
+        "id": 6363,
+        "country": "BG",
+        "sunrise": 1672897773,
+        "sunset": 1672930946
+    },
+    "timezone": 7200,
+    "id": 728193,
+    "name": "Plovdiv",
+    "cod": 200
+}
