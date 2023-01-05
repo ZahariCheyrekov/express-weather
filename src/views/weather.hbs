@@ -1,0 +1,28 @@
+<main class="cities__main">
+  <form class="search" method="GET">
+    <legend>City Forecast</legend>
+    <input type="search" name="city" placeholder="Enter city name" />
+    <button type="submit">Search</button>
+  </form>
+  <section class="city__section--info">
+    <h2 class="city">
+      City Data:
+    </h2>
+    {{#if cityData.name}}
+      <h3 class="city__title--data">Name: {{cityData.name}}</h3>
+      <h3 class="city__title--data">Country: {{cityData.sys.country}}</h3>
+      <h3 class="city__title--data">Wind Speed: {{cityData.wind.speed}}km</h3>
+      <h3 class="city__title--data">Temp: {{cityData.main.temp}}°</h3>
+      <h3 class="city__title--data">Feels Like:
+        {{cityData.main.feels_like}}°</h3>
+      <h3 class="city__title--data">Temp Min: {{cityData.main.temp_min}}°</h3>
+      <h3 class="city__title--data">Temp Max: {{cityData.main.temp_max}}°</h3>
+      <h3 class="city__title--data">Pressure: {{cityData.main.pressure}}</h3>
+      <h3 class="city__title--data">Humidity: {{cityData.main.humidity}}</h3>
+    {{else}}
+      <h3>
+        No results found :(
+      </h3>
+    {{/if}}
+  </section>
+</main>
