@@ -1,21 +1,14 @@
 const express = require('express');
 const dotenv = require('dotenv');
 
-const { expressConfig } = require('./config/hbs-config');
 const routes = require('./routes');
+const { hbsConfig } = require('./config/hbs-config');
+const { expressConfig } = require('./config/express-config');
 
 const app = express();
 
-const PORT = 5000;
-
 dotenv.config();
+hbsConfig(app);
 expressConfig(app);
 
-app.get('/', (req, res) => {
-    res.send('Application is running correctly');
-});
-
 app.use(routes);
-
-app.listen(PORT, () => console.log(`Server is listening on: http://localhost:${PORT}`));
-
