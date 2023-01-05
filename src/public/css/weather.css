@@ -1,0 +1,26 @@
+.cities__main {
+    margin: 100px auto;
+    max-width: 1000px;
+}
+
+.search__form {
+    margin-bottom: 60px;
+}
+
+.search__form legend {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.search__form input {
+    width: 80%;
+}
+
+.search__form button {
+    width: 18%;
+}
+
+.search__form input,
+.search__form button {
+    font-size: 1.2rem;
+}
